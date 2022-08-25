@@ -2,13 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesheetPS2B.css">
-    <title>MIDTERM</title>
     
+    
+
+
+
 </head>
 <body>
+
+    <div class = "grade-box">
+        <div class = "Results">
+            <h1>MID GRADE:</h1>
+            <div class = "enlistment">
+                <h2>Percentage - <span class = "Perc"></span></h2>
+                <h2>Grade - <span class = "Gr"></span></h2>
+                <h2>Gwa - <span class = "Gw"></span></h2>
+            </div>
+
+        </div>
+            <div class = "list-box">
+                <div class = "list-grade">
+                    <!--quizzes-->
+                    
+                    <input type = "number" id = "q1" placeholder= "quiz-1">
+                    <input type = "number" id = "q2" placeholder= "quiz-2">
+                    <input type = "number" id = "q3" placeholder= "quiz-3">
+                    
+                    <!--lab-act-->
+                    
+                    <input type = "number" id = "La1" placeholder= "Labact-1">
+                    <input type = "number" id = "La2" placeholder= "Labact-2">
+                    <input type = "number" id = "La3" placeholder= "Labact-3">
+
+                    <!--Ass and lab-act-->
+                    <input type = "number" id = "Ass1" placeholder= "Ass-1">
+                    <input type = "number" id = "Ass2" placeholder= "Ass-2">                    
+                    <input type = "number" id = "Prelim" placeholder= "Prelims">                    
+
+                    <button type = "button"> Compute</button>
+                   
+                </div>
+            </div>
+
+                <div class = "computed-grade">
+                    <h2>Your Midterm grade:</h2>
+                </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
 
     <form action="#">
 
@@ -50,6 +104,7 @@
 
 
         <script src="/app.js"></script>
+
     
 </body>
 </html>
