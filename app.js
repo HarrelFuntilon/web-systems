@@ -1,3 +1,4 @@
+//PRELIM
 function Compute () {
             
     var quiz1 = parseFloat(document.getElementById("Q1").value);
@@ -50,10 +51,10 @@ function Compute () {
 
 }
 
-
+// MIDTERM
 function Calculate () {
           
-    var quiz1 = parseFloat(document.getElementById("Q1").value);
+    var quiz1 = parseFloat(document.getElementById("q1").value);
 
 
     var quiz2 = parseFloat(document.getElementById("Q2").value);
@@ -102,3 +103,7 @@ function Calculate () {
 
     document.getElementById("result").innerHTML = pg.toFixed(1);
 }
+
+//FINALS
+function calc (){}
+
