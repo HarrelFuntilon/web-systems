@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesheetPS2A.css">
     <title>Calculator</title>
-    
 </head>
+
 <body>
-    
+    <script>
+
+        function addition() {
+            var a = parseInt(document.getElementById('firstnumber').value);
+            var b = parseInt(document.getElementById('secondnumber').value);
+            document.getElementById('answer').innerHTML = (a + b);
+
+        }
+
+        function subtract() {
+            var a = parseInt(document.getElementById('firstnumber').value);
+            var b = parseInt(document.getElementById('secondnumber').value);
+            document.getElementById('answer').innerHTML = (a - b);
+
+        }
+
+        function multiply() {
+            var a = parseInt(document.getElementById('firstnumber').value);
+            var b = parseInt(document.getElementById('secondnumber').value);
+            document.getElementById('answer').innerHTML = (a * b);
+
+        }
+
+        function divide() {
+            var a = parseInt(document.getElementById('firstnumber').value);
+            var b = parseInt(document.getElementById('secondnumber').value);
+            document.getElementById('answer').innerHTML = (a / b);
+
+        }
+
+        function clearText() {
+            document.getElementById('firstnumber').value = '';
+            document.getElementById('secondnumber').value = '';
+            document.getElementById('answer').innerHTML = ' ';
+        }
+
+
+    </script>
+    <h1>Simple JavaScript Calculator</h1>
+    <div>
+        <label>1st Number:</label>
+        <input id="firstnumber" value="" type="number">
+    </div>
+    <br>
+    <div>
+        <label>2nd Number:</label>
+        <input id="secondnumber" value="" type="number">
+    </div>
+    <br>
+    <input type="submit" value="+" onclick="addition()">
+    <input type="submit" value="-" onclick="subtract()">
+    <input type="submit" value="*" onclick="multiply()">
+    <input type="submit" value="/" onclick="divide()">
+    <input type="submit" value="Clear" onclick="clearText()">
+    <br><br>
+    <b>Answer: <span id="answer"></span></b>
 </body>
+
 </html>
