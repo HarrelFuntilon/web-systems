@@ -6,9 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesheetPS2B.css">
     <title>PRELIM</title>
+
+
+
+
+    <script>
+        
+        function Compute () {
+            
+            var quiz1 = parseFloat(document.getElementById("Q1").value);
+   
+
+            var quiz2 = parseFloat(document.getElementById("Q2").value);
+
+
+            var quiz3 = parseFloat(document.getElementById("Q3").value);
+
+
+            var lab1 = parseFloat(document.getElementById("L1").value);
+ 
+
+            var lab2 = parseFloat(document.getElementById("L2").value);
+
+            var lab3 = parseFloat(document.getElementById("L3").value);
+    
+
+            var a1 = parseFloat(document.getElementById("A1").value);
+           
+
+            var a2 = parseFloat(document.getElementById("A2").value);
+            
+
+            // COMPUTATION ASSIGNMENT | LABORATORY | QUIZ
+            var totalAss =  (a1 + a2) / 2; 
+            console.log("Total Ass: " + totalAss);
+
+            var totalQuiz = (quiz1 + quiz2 + quiz3) / 3;
+            console.log("Total Quiz: " + totalQuiz);
+
+            var totalLab = parseFloat(a1 + a2)  / 2;
+            console.log("Total Lab: " + totalLab);
+
+
+            // CLASS STANDING
+            var classStanding = (totalAss * 0.2) + (totalQuiz * 0.6) + (totalLab * 0.2);
+            console.log("ClassStanding = " + classStanding);
+
+            // EXAM SCORE
+            var pre = document.getElementById("PE").value;
+            console.log (pre + " Exam");
+
+            // PRELIM GRADE = (PRELIM * 50%) + (Class * 50%)
+            var pg = (pre * 0.5) + (classStanding * 0.5);
+
+            document.getElementById("result").innerHTML = pg;
+        
+        }
+      
+
+    </script>
+
+
     
 </head>
+
 <body>
+
+    <form action="#">
+
+        <!--Quiz Activity-->
+        <label for="Q1">Enter Quiz: 1 </label>
+        <input type="text" name="Q1" id="Q1"><br><br> 
+        
+        <label for="Q2">Enter Quiz: 2 </label>
+        <input type="text" name="Q2" id="Q2"><br><br>
+
+        <label for="Q3">Enter Quiz: 3 </label>
+        <input type="text" name="Q3" id="Q3"><br><br>
+
+ 
+        <label for="L1">Enter Laboratory: 1 </label>
+        <input type="text" name="L1" id="L1"><br><br> 
+
+        <label for="L2">Enter Laboratory: 2 </label>
+        <input type="text" name="L2" id="L2"><br><br>
+
+        <label for="L3">Enter Laboratory: 3 </label>
+        <input type="text" name="L3" id="L3"><br><br>
+
+
+         <label for="A1">Enter Assignment: 1 </label>
+         <input type="text" name="A1" id="A1"><br><br> 
+ 
+         <label for="A2">Enter Assignment: 2 </label>
+         <input type="text" name="A2" id="A2"><br><br>
+
+
+        <label for="PE">Enter Prelim Exam: </label>
+        <input type="text" name="PE" id="PE"><br><br> 
+
+        <h1>Your Grade is: </h1>
+        <p id="result"></p>
+
+        <input type="button" value="Compute" id="compute" onclick="Compute ()">
+
+
+
+    </form>
     
 </body>
+
+
+
 </html>
