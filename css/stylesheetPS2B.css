@@ -1,115 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-*
-{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    text-transform: capitalize;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body
-{
-    display:grid;
-    place-content: center;
-    min-height:100vh;
-    background-color: rgb(146, 142, 142);
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: #f7eabe;
 }
-.grade-box
-{
-    background-color:#8A6243;
-    width: 900px;
-    height: 600px;
-    border-radius:20px;
+.grade-box {
+  background-color: #8a6243;
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
 }
-.Results
-{
-    position:absolute;
-    width: 300px;
-    height: 600px;
-    background-color:#D6BDA9;
-    border-radius: 20px 0px 0px 20px ;
+.Results {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  background-color: #d6bda9;
+  border-radius: 20px 0px 0px 20px;
 }
 
-.Results h1
-{
-    margin-top: 100px;
-    text-align: center;
-    font-size:2.5rem;
-    color:white;
-    font-weight:900;
-    letter-spacing: 4px;
+.Results h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 4px;
 }
-.enlistment
-{
-    text-align:center;
-    display:grid;
-    place-content:center;
-    min-height:30vh;
+.enlistment {
+  text-align: center;
+  display: grid;
+  place-content: center;
+  min-height: 30vh;
 }
 
-.enlistment h2
-{
-    font-size:1.3rem;
-    font-weight: 500;
-    margin: 20px 0px;
+.enlistment h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 20px 0px;
 }
-.list-box .list-grade
-{
-    margin-top: 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content:center; 
-    align-items:center;
-    min-width:62vw;
-    min-height:50vh;
+.list-box .list-grade {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 62vw;
+  min-height: 50vh;
 }
-.list-grade input
-{
-    margin: 10px 0px;
-    width: 350px;
-    height: 32px;
-    padding: 12px;
-    outline:none;
-    border:0;
-    border-radius: 34px;
-    font-size:0.9rem;
+.list-grade input {
+  margin: 10px 0px;
+  width: 350px;
+  height: 32px;
+  padding: 12px;
+  outline: none;
+  border: 0;
+  border-radius: 34px;
+  font-size: 0.9rem;
 }
 
-.list-grade button
-{
-    height:40px;
-    width:150px;
-    margin-top:10px;
-    padding: 0px 10px;
-    background-color:beige;
-    color:black;
-    border:0;
-    outline:none;
-    font-size:medium;
-    font-weight:900;
-    border-radius:35px;
+.list-grade button {
+  height: 40px;
+  width: 150px;
+  margin-top: 10px;
+  padding: 0px 10px;
+  background-color: beige;
+  color: black;
+  border: 0;
+  outline: none;
+  font-size: medium;
+  font-weight: 900;
+  border-radius: 35px;
 }
-.computed-grade
-{
-    position:absolute;
-    bottom: 164px;
-    width:300px;
-    height:100px;  
-    background-color: beige;
-    border-radius:0px 0px 0px 20px;
+.computed-grade {
+  position: absolute;
+  bottom: 164px;
+  width: 300px;
+  height: 100px;
+  background-color: beige;
+  border-radius: 0px 0px 0px 20px;
 }
-.computed-grade h2
-{
-    text-align: center;
-    line-height:2px;
-    font-size:1rem;
-    color:black;
-    font-weight: 600;
-    letter-spacing:2px;
+.computed-grade h2 {
+  text-align: center;
+  line-height: 2px;
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-.main{
+.main {
+  width: 100vw;
+  padding-left: 15%;
+}
 
-    width: 51vw;
-    background-color: yellow;
+.right {
+  background-color: #3b3f4d;
+  width: 45vw;
+  padding: 8.2%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0;
+}
+
+.left {
+  background-color: #bdcaf7;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-top: 20%;
+}
+
+.forms {
+  margin-left: 20%;
+}
+
+.input-width {
+  width: 160px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+  padding: 0 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: left;
+  margin-bottom: 1%;
+  margin-left: 1.1%;
+  background-color: #CAD5F9;
+}
+
+.quiz {
+  width: 160px;
+  margin-left: 9%;
+  margin-bottom: 1%;
+}
+
+label {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 15px;
+  margin: 5px 10px;
+  letter-spacing: 0.8px;
+  color: #c3cef5;
+  font-weight: 500;
+}
+
+::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  color: #3b3f4d;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"]:focus {
+  border: 2px solid rgb(96, 155, 223);
+  outline: none;
+}
+
+.prelim {
+  width: 160px;
+  height: 38px;
+  padding-left: 15px;
+  margin: 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Libre Franklin", sans-serif;
+  margin-left: 3%;
+  background-color: #CAD5F9;
+}
+
+.button {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 38px;
+  margin: 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 12px;
+  letter-spacing: 0.8 px;
+  padding: 3px;
+  background-color: #A7BAFF;
+  color: #3b3f4d;
+  margin-left: 10px;
+}
+
+/* .button:hover {
+  border: 3px solid white;
+  color: #0e283a;
+  background: none;
+} */
+
+.text{
+  color: #3B3F4D;
+  font-family: 'Libre Franklin', sans-serif;
+  margin-bottom: 3%;
+  text-align: center;
+
+}
+
+.main-text{
+  font-size: 55px;
+  font-weight: bold;
+  
+
+}
+.sub-text{
+  font-size: 65px;
+  font-weight: bold;
+  color: #3B3F4D;
+}
+
+.sub-main-text{
+  font-size: 45px;
+  
 }

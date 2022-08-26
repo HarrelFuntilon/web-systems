@@ -1,60 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesheetPS2B.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <div class = "grade-box">
-        <div class = "Results">
-            <h1>MID GRADE:</h1>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/stylesheetPS2B.css" />
 
-        </div>
-            <div class = "list-box">
-                <div class = "list-grade">
-                    <!--quizzes-->
-                    
-                    <input type = "number" id = "q1" placeholder= "quiz-1">
-                    <input type = "number" id = "q2" placeholder= "quiz-2">
-                    <input type = "number" id = "q3" placeholder= "quiz-3">
-                    
-                    <!--lab-act-->
-                    
-                    <input type = "number" id = "La1" placeholder= "Labact-1">
-                    <input type = "number" id = "La2" placeholder= "Labact-2">
-                    <input type = "number" id = "La3" placeholder= "Labact-3">
+    <title>MIDTERM</title>
+  </head>
 
-                    <!--Ass and lab-act-->
-                    <input type = "number" id = "Ass1" placeholder= "Ass-1">
-                    <input type = "number" id = "Ass2" placeholder= "Ass-2">                    
-                    <input type = "number" id = "Prelim" placeholder= "Prelims">                    
-
-                    <button type = "button"> Compute</button>
-                   
-                </div>
-            </div>
-
-                <div class = "computed-grade">
-                    <h2>Your Midterm grade:</h2>
-                </div>
-
-
-
-
+  <body>
+    <div class="main container-fluid">
+      <div class="row">
+        <div class="left col-4">
+          <h1 class="main-text text">MIDTERM GRADE</h1>
+          
+          <h1 class="sub-main-text text">Your Grade is:</h1>
+          <p id="result" class="text sub-text">output</p>
         </div>
 
+        <div class="right container col-7">
+          <form action="#" class="forms">
+            <!--Quiz Activity-->
+            <label for="Q1">Enter Quiz: 1 </label>
+            <input
+              type="number"
+              name="Q1"
+              id="Q1"
+              class="input-width quiz"
+              placeholder="Score in Quiz 1"
+            /><br /><br />
 
+            <label for="Q2">Enter Quiz: 2 </label>
+            <input
+              type="number"
+              name="Q2"
+              id="Q2"
+              class="input-width quiz"
+              placeholder="Score in Quiz 2"
+            /><br /><br />
+
+            <label for="Q3">Enter Quiz: 3 </label>
+            <input
+              type="number"
+              name="Q3"
+              id="Q3"
+              class="input-width quiz"
+              placeholder="Score in Quiz 3"
+            /><br /><br />
+
+            <label for="L1">Enter Laboratory: 1 </label>
+            <input
+              type="number"
+              name="L1"
+              id="L1"
+              class="input-width"
+              placeholder="Laboratory Score 1"
+            /><br /><br />
+
+            <label for="L2">Enter Laboratory: 2 </label>
+            <input
+              type="number"
+              name="L2"
+              id="L2"
+              class="input-width"
+              placeholder="Laboratory Score 2"
+            /><br /><br />
+
+            <label for="L3">Enter Laboratory: 3 </label>
+            <input
+              type="number"
+              name="L3"
+              id="L3"
+              class="input-width"
+              placeholder="Laboratory Score 3"
+            /><br /><br />
+
+            <label for="A1">Enter Assignment: 1 </label>
+            <input
+              type="number"
+              name="A1"
+              id="A1"
+              class="input-width"
+              placeholder="Assignment Score 1"
+            /><br /><br />
+
+            <label for="A2">Enter Assignment: 2 </label>
+            <input
+              type="number"
+              name="A2"
+              id="A2"
+              class="input-width"
+              placeholder="Assignment Score 2"
+            /><br /><br />
+
+            <label for="PE">Enter Prelim Exam: </label>
+            <input
+              type="number"
+              name="PE"
+              id="PE"
+              class="prelim"
+              placeholder="Prelim Exam"
+            />
+            <br />
+            <br />
+            <br />
+            <input
+              type="button"
+              value="COMPUTE"
+              id="compute"
+              onclick="Compute ()"
+              class="button"
+            />
+
+            <input
+              type="button"
+              value="PRELIM"
+              id="compute"
+              onclick=""
+              class="button"
+            />
+
+            <input
+              type="button"
+              value="FINALS"
+              id="compute"
+              onclick=""
+              class="button"
+            />
+          </form>
+        </div>
+      </div>
     </div>
 
+    <script src="/app.js"></script>
 
-
-        <script src="/app.js"></script>
-
-    
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
