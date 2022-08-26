@@ -101,12 +101,17 @@ function Calculate() {
     console.log("ClassStanding = " + classStanding);
 
     // EXAM SCORE
-    var pre = document.getElementById("PE").value;
-    console.log(pre + " Exam");
+    var mid = document.getElementById("ME").value;
+    console.log(mid * .5) +(classStangin*0.5);
 
     // PRELIM GRADE = (PRELIM * 50%) + (Class * 50%)
-    var pg = (pre * 0.5) + (classStanding * 0.5);
+    var tmg = (pre * 0.5) + (classStanding * 0.5);
 
+    // MIDTERM GRADE = (PRELIMS * 0.3) + (TMG*0.6)
+    mg = (0.3 * pre) + (tmg * 0.6);
+
+
+    
 
     document.getElementById("result").innerHTML = pg.toFixed(1);
 }
@@ -158,7 +163,7 @@ function calc() {
 
     // PRELIM GRADE = (PRELIM * 50%) + (Class * 50%)
     var tfg = (fin * 0.5) + (classStanding * 0.5);
-
+    
     // FINAL GRADE = (MIDTERM GRADE * 0.3) + (TFG * 0.6)\
     fg = (mid * 0.3) + (tfg * 0.6);
 
