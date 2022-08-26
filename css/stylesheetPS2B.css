@@ -107,3 +107,9 @@ body
     font-weight: 600;
     letter-spacing:2px;
 }
+
+.main{
+
+    width: 51vw;
+    background-color: yellow;
+}
