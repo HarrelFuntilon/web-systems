@@ -1,7 +1,7 @@
 // MAJOR VARIABLES
 var pg;
+var mg;
 var fg;
-var TFG;
 
 //PRELIM
 function Compute() {
@@ -153,21 +153,14 @@ function calc() {
     console.log("ClassStanding = " + classStanding);
 
     // EXAM SCORE
-    // var pre = document.getElementById("PE").value;
-    // console.log(pre + " Exam");
-
-    // PRELIM GRADE = (PRELIM * 50%) + (Class * 50%)
-    // var pg = (pre * 0.5) + (classStanding * 0.5);
-
-    // EXAM SCORE
     var fin = document.getElementById("FE").value;
     console.log(fin * 0.5) + (classStanding * 0.5);
 
-    // TFG (pg + mg + fg) / 3
-    TFG = (pg + mg + fg) / 3;
+    // PRELIM GRADE = (PRELIM * 50%) + (Class * 50%)
+    var tfg = (fin * 0.5) + (classStanding * 0.5);
 
     // FINAL GRADE = (MIDTERM GRADE * 0.3) + (TFG * 0.6)\
-    fg = (mid * 0.3) + (TFG * 0.6);
+    fg = (mid * 0.3) + (tfg * 0.6);
 
 
     document.getElementById("result").innerHTML = fg.toFixed(1);
