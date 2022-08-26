@@ -46,7 +46,6 @@ function Compute() {
 
   localStorage.setItem("PRELIM GRADE", pg);
   console.log(localStorage);
-
 }
 
 // MIDTERM
@@ -89,8 +88,9 @@ function Calculate() {
   var tmg = mid * 0.5 + classStanding * 0.5;
 
   // MIDTERM GRADE = (PRELIMS * 0.3) + (TMG*0.7)
-//   mg = (parseFloat(localStorage.getItem('PRELIM GRADE')).toFixed(1) * 0.3) + (tmg * 0.7);
-  mg = 80.5 * 0.3 + tmg * 0.6;
+  mg =
+    parseFloat(localStorage.getItem("PRELIM GRADE")).toFixed(1) * 0.3 +
+    tmg * 0.7;
 
   document.getElementById("result").innerHTML = mg.toFixed(1);
 }
@@ -138,9 +138,24 @@ function calc() {
   fg = mid * 0.3 + tfg * 0.6;
 
   document.getElementById("result").innerHTML = fg.toFixed(1);
+
+
+  localStorage.clear();
 }
 
 function btnMD() {
-
-    document.location.href= "FUNTILON_MAESTRO_VILLANIA_PS2B_MIDTERM.html"
+  document.location.href = "FUNTILON_MAESTRO_VILLANIA_PS2B_MIDTERM.html";
 }
+
+const btn = document.getElementById('clear');
+
+btn.addEventListener('click', function handleClick(event) {
+
+  event.preventDefault();
+
+  const inputs = document.querySelectorAll('.cleared');
+
+  inputs.forEach(input => {
+    input.value = '';
+  });
+});
