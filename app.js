@@ -1,8 +1,3 @@
-// MAJOR VARIABLES
-var tpg;
-var mg;
-var fg;
-
 //PRELIM
 function Compute() {
   var quiz1 = parseFloat(document.getElementById("Q1").value);
@@ -93,11 +88,14 @@ function Calculate() {
     tmg * 0.7;
 
   document.getElementById("result").innerHTML = mg.toFixed(1);
+
+  localStorage.setItem("MIDTERM GRADE", mg);
+  console.log(localStorage);
 }
 
 //FINALS
 function calc() {
-  var quiz1 = parseFloat(document.getElementById("q1").value);
+  var quiz1 = parseFloat(document.getElementById("Q1").value);
 
   var quiz2 = parseFloat(document.getElementById("Q2").value);
 
@@ -129,13 +127,15 @@ function calc() {
 
   // EXAM SCORE
   var fin = document.getElementById("FE").value;
-  console.log(fin * 0.5) + classStanding * 0.5;
+  console.log("FINAL EXAM " + fin);
 
-  // PRELIM GRADE = (PRELIM * 50%) + (Class * 50%)
+  // MIDTERM GRADE = (MIDTERM * 50%) + (Class * 50%)
   var tfg = fin * 0.5 + classStanding * 0.5;
 
   // FINAL GRADE = (MIDTERM GRADE * 0.3) + (TFG * 0.6)\
-  fg = mid * 0.3 + tfg * 0.6;
+   fg =
+    parseFloat(localStorage.getItem("MIDTERM GRADE")).toFixed(1) * 0.3 +
+    tfg * 0.7; 
 
   document.getElementById("result").innerHTML = fg.toFixed(1);
 
@@ -159,3 +159,11 @@ btn.addEventListener('click', function handleClick(event) {
     input.value = '';
   });
 });
+
+function btnFN(){
+  document.location.href = "FUNTILON_MAESTRO_VILLANIA_PS2B_FINAL.html";
+}
+
+function btnPL() {
+  document.location.href = "FUNTILON_MAESTRO_VILLANIA_PS2B_PRELIM.html"
+}
