@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheetPS2A.css">
     <title>Calculator</title>
 </head>
 
@@ -47,24 +48,36 @@
 
 
     </script>
-    <h1>Simple JavaScript Calculator</h1>
-    <div>
-        <label>1st Number:</label>
-        <input id="firstnumber" value="" type="number">
+
+    <div class="main-container">
+
+        <div class="container">
+            <div class="card">
+                <div class="top-container">
+                    <input id="firstnumber" value="" type="number">
+                    <br>
+                    <input id="secondnumber" value="" type="number">
+                </div>
+                <div class="bottom-container">
+
+                    <input type="button" class = "buts" value="+" onclick="addition()">
+                    <input type="button" class = "buts" value="-" onclick="subtract()">
+                    <input type="button" class = "buts" value="*" onclick="multiply()">
+                    <input type="button" class = "buts" value="/" onclick="divide()">
+                    <input type="button" class = "buts"  value="Clear" onclick="clearText()">
+                    
+                    <br><br>
+                    
+                        <b><button class ="ans-tab"><span id="answer">Answer:</span></b></button>
+                   
+                    
+                </div>
+            </div>
+
+        </div>
     </div>
-    <br>
-    <div>
-        <label>2nd Number:</label>
-        <input id="secondnumber" value="" type="number">
-    </div>
-    <br>
-    <input type="submit" value="+" onclick="addition()">
-    <input type="submit" value="-" onclick="subtract()">
-    <input type="submit" value="*" onclick="multiply()">
-    <input type="submit" value="/" onclick="divide()">
-    <input type="submit" value="Clear" onclick="clearText()">
-    <br><br>
-    <b>Answer: <span id="answer"></span></b>
+
+
 </body>
 
 </html>
