@@ -17,7 +17,7 @@
 .container {
     height: 91vh;
     width: 100%;
-   
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
     height: 190px;
     width: 100%;
     background-color: #957AFF    ;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 10px;
     position: relative;
     flex-direction: column;
@@ -80,7 +80,7 @@
     padding-top:-1;
     border:none;
     font-family: sans-serif;
-    font-size:90;
+    font-size:20px;
     border-radius:10px;
     margin:1.5;
     transition:0.25px;
@@ -106,15 +106,32 @@ input[type=number]
 }
 .ans-tab
 {
-   
+    
     width:290px;
-    height:55px;
+    height:90px;
     padding-top:-1;
     border:none;
     font-family: sans-serif;
-    font-size:90;
+    font-size:65px;
     border-radius:10px;
     margin:1.5;
     transition:0.25px;
-    font-weight: bold;
+    color:#4A3AAF;
+   
+}
+.title
+{
+    text-transform: uppercase;
+color:#4A3AAF;
+width: 280px;
+height: 100px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+text-align:center;
+letter-spacing: 0.165em;
+margin-top: 100px;
+margin-left: 790px;
+margin-bottom: -180px;
 }
