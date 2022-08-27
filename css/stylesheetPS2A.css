@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+
+    background-color:none;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container {
+    height: 91vh;
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-container {
+
+    height: 190px;
+    width: 100%;
+    background-color: #957AFF    ;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.bottom-container {
+    height: 340px;
+    width: 100%;
+    background-color: #B7A8F5;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10%;
+
+}
+
+.card {
+    height: 55vh;
+    width: 20%;
+    background-color: violet;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+#button {
+    border: none;
+    background: pink;
+    width: 245;
+    height: 75;
+    padding-top: 1;
+    border: none;
+    font-size: 20;
+    font-weight: 300;
+    border-radius: 30px;
+
+
+}
+.buts
+{
+    width:55px;
+    height:55px;
+    padding-top:-1;
+    border:none;
+    font-family: sans-serif;
+    font-size:20px;
+    border-radius:10px;
+    margin:1.5;
+    transition:0.25px;
+    cursor:pointer;
+    font-weight: bold;
+    
+}
+.buts:hover{
+    background-color:#F8EAEA
+}
+
+input[type=number] 
+{
+    border: none;
+    border-radius: 3px;
+    width: 280px;
+    height: 45px;
+    padding-left:20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #F8EAEA;
+    
+}
+.ans-tab
+{
+    
+    width:290px;
+    height:90px;
+    padding-top:-1;
+    border:none;
+    font-family: sans-serif;
+    font-size:65px;
+    border-radius:10px;
+    margin:1.5;
+    transition:0.25px;
+    color:#4A3AAF;
+   
+}
+.title
+{
+    text-transform: uppercase;
+color:#4A3AAF;
+width: 280px;
+height: 100px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+text-align:center;
+letter-spacing: 0.165em;
+margin-top: 100px;
+margin-left: 790px;
+margin-bottom: -180px;
+}
